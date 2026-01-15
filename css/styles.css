@@ -7,13 +7,22 @@ a{
     text-decoration: none;
     cursor: pointer;
 }
+.header-logo-first_part, .footer-logo-first_part{
+    color: #4D5AE5;
+}
+.header-logo-second_part{
+    color: #2E2F42;
+}
+.footer-logo-second_part{
+    color: #F4F4FD;
+}
 .logo{
     font-family: "Raleway", sans-serif;
-    color: #2E2F42;
     text-transform: uppercase;
     font-weight: 700;
-    line-height: 1.35;
+    line-height: 1.17;
     letter-spacing: 0.03em; 
+    font-size: 18px;
 
 }
 /* Навігаційні посилання */
@@ -74,9 +83,6 @@ ul{
     color: #404BBF;
 }
 
-.logo span{
-    color: #4D5AE5;
-}
 .solution{
     background-color: #2E2F42;
     color: #F4F4FD;
@@ -107,9 +113,7 @@ ul{
     background-color: #ffffff;
     margin: 20px 20px;
 }
-footer .logo{
-    color: #F4F4FD;
-}
+
 footer, footer a{
     background-color: #2E2F42;
     color: #F4F4FD;
