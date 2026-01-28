@@ -11,6 +11,36 @@ body {
   background-color: #ffffff;
 }
 
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  padding-bottom: 32px;
+
+}
+.social-link {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  fill: #4D5AE5;
+
+  stroke: #F4F4FD;
+
+}
+.social-link:hover .icon, .social-link:focus .icon {
+  fill: #404BBF;
+
+}
+.icon {  
+  height: inherit;
+  width: inherit;
+  display: block;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .container {
   max-width: 1158px;
   padding: 0 15px;
@@ -83,7 +113,7 @@ body {
 }
 
 .contacts-link {
-    display: inline-block;
+  display: inline-block;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -95,9 +125,12 @@ body {
 
 /* Hero Section */
 .hero {
-  background-color: #2e2f42;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.png);
   padding: 188px 0;
   /* Для фонового зображення в майбутньому */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -131,6 +164,19 @@ body {
 
 /* Features */
 .features { padding: 120px 0; }
+.features-ico{
+  width: 264px;
+  height: 112px;
+  background-color: #F4F4FD;
+  border:#8E8F99 1px solid;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+.icon-antenna-1, .icon-astronaut-1, .icon-diagram-1, .icon-clock-1 {
+  width: 64px;
+  height: 64px;
+  margin: 24px auto 0 auto;
+}
 .features-list {
   display: flex;
   gap: 24px;
@@ -237,7 +283,21 @@ body {
   background-color: #2e2f42;
   padding: 100px 0;
 }
+.footer-social-title{
+  color: #f4f4fd;
+  width: 100%;  
+}
+.social-footer{
+  justify-content: flex-start;
+}
+.social-footer .social-link:hover .icon, .social-footer .social-link:focus .icon {
+  fill: #31D0AA;
 
+}
+.footer-content{
+  display: flex;
+  gap: 120px;
+}
 .logo-studio-footer { color: #f4f4fd; }
 .footer-text {
   color: #f4f4fd;
