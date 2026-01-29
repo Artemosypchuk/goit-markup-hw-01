@@ -297,8 +297,8 @@ body {
   font-size: 16px;           /* Size */
   line-height: 24px;         /* Line height */
   letter-spacing: 0.02em; 
-  width: 360px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   background-color: #4D5AE5;
   position: absolute;
   color: #F4F4FD;
