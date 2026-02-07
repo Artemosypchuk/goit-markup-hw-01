@@ -167,10 +167,6 @@
                   </li>
                 </ul>
               </div>
-
-
-                
-
             </li>
             <li class="team-item">
               <img
@@ -513,5 +509,93 @@
         </div>
       </div>
     </footer>
+    <div class="popup-wrapper">
+      <div class="popup">
+        <button class="popup-close" type="button">
+          <svg class="icon-close" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="popup-txt">Leave your contacts and we will call you back</p>
+        <form class="popup-form" action="">
+          <div class="input-wrapper">
+            <label class="popup-label" for="name">Name</label>
+            <div class="inner-icon-wrapper">
+              <input
+                class="popup-input"
+                id="name"
+                type="text"
+                name="name"
+                required
+              />
+              <svg class="icon-popup icon-pers" width="12" height="12">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="input-wrapper">
+            <label class="popup-label" for="phone">Phone</label>
+
+            <div class="inner-icon-wrapper">
+              <input
+                class="popup-input"
+                id="phone"
+                type="tel"
+                name="phone"
+                required
+              />
+              <svg class="icon-popup icon-phone" width="13" height="13">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="input-wrapper">
+            <label class="popup-label" for="email">Email</label>
+            <div class="inner-icon-wrapper">
+              <input
+                class="popup-input"
+                id="email"
+                type="email"
+                name="email"
+                required
+              />
+              <svg class="icon-popup icon-mail" width="15" height="12">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="input-wrapper">
+            <label class="popup-label" for="txt">Comment</label>
+            <textarea
+            class="textarea"
+              name="textarea"
+              placeholder="Text input"
+              id="textarea"
+            ></textarea>
+          </div>
+          <div class="input-wrapper-checkbox">
+            <!-- visually-hidden -->
+            <input
+              class="checkbox visually-hidden"
+              id="terms"
+              type="checkbox"
+              name="terms"
+              value="true"
+              required
+            />
+            <div class="custom-checkbox">
+              <svg class="icon-check" width="10" height="8">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </div>
+            <label class="popup-label" for="terms"
+              >I accept the terms and conditions of the
+              <a href="#" class="terms-link">Privacy Policy</a></label
+            >
+          </div>
+          <button class="popup-submit" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

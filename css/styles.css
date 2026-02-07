@@ -339,11 +339,11 @@ body {
   padding: 100px 0;
 }
 .footer-social-title{
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-color: #FFFFFF;
-letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #FFFFFF;
+  letter-spacing: 0.02em;
 
 }
 .social-footer{
@@ -370,4 +370,157 @@ letter-spacing: 0.02em;
   letter-spacing: 0.02em;
   max-width: 264px;
   margin-top: 16px;
+}
+.popup-wrapper{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #2E2F4266;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.popup{
+  top: 80px;
+  left: 0;
+  width: 408px;
+  max-height: 584px;
+  background-color: #FCFCFC;
+  padding: 24px;
+  position: relative;
+}
+.popup-close{
+  border-radius: 50%;
+  background-color: #E7E9FC;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+}
+.popup-close:hover, .popup-close:focus{
+  background-color: rgba(64, 75, 191, 1);
+}
+.popup-close:hover svg, .popup-close:focus svg{
+  fill: rgba(255, 255, 255, 1)
+}
+.popup-txt{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  padding-top: 48px;
+  margin-bottom: 16px;
+}
+.popup-form{
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.input-wrapper{
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+.inner-icon-wrapper{
+  position: relative;
+}
+.icon-popup {
+  position: absolute;
+  top: 50%;
+  left: 19px;
+  transform: translateY(-50%);
+  fill: #2E2F42;
+} 
+.popup-input{
+  padding: 11px 10px 11px 38px;
+  border: solid 1px rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  width: 360px;
+  outline: none;
+}
+.popup-input:focus, .popup-input:focus + svg{
+  border-color: #4D5AE5;
+  fill: #4D5AE5;
+}
+.popup-wrapper {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+}
+.input-wrapper-checkbox{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.textarea{
+  width: 360px;
+  height: 120px;
+  padding: 8px 16px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.7;
+  letter-spacing: 0.04em;
+  border: solid 1px rgba(46, 47, 66, 0.4);
+  resize: none;
+  outline: none;
+}
+.textarea::placeholder{
+  color: rgba(46, 47, 66, 0.4);
+}
+.textarea:focus{
+  border-color: #4D5AE5;
+}
+.custom-checkbox {
+  width: 16px;
+  height: 16px;
+  border: solid 1px rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: none;
+}
+.checkbox:focus + .custom-checkbox {
+  border-color: #4D5AE5;
+}
+.checkbox:checked + .custom-checkbox {
+  background-color: #4D5AE5;
+  border-color: #4D5AE5;
+  fill: #F4F4FD;
+}
+.terms-link {
+  color: #4D5AE5;
+  cursor: pointer;
+}
+.terms-link:hover, .terms-link:focus {
+  color: #404BBF;
+  text-decoration: underline;
+}
+.popup-submit{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background-color: #4D5AE5;
+  color: #F4F4FD;
+  border-radius: 4px;
+  padding: 16px 32px;
+  width: 169px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border: none;
+  margin: 24px auto;
+  cursor: pointer;
 }
