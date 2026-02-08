@@ -507,9 +507,31 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe">
+          <form class="sub-form">
+            
+              <label for="email-subscribe" class="email-subscribe">Subscribe</label>
+              <div class="sub-input-wrap">
+              <input
+                type="email-subscribe"
+                name="email-subscribe"
+                id="email-subscribe"
+                placeholder="E-mail"
+                class="sub-input"
+              />
+            
+            <button type="submit" class="subscribe-btn">
+              Subscribe
+              <svg width="24" height="24" class="icon-send">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+          </form>
+        </div>
       </div>
     </footer>
-    <div class="popup-wrapper">
+    <div class="popup-wrapper hidden-popup">
       <div class="popup">
         <button class="popup-close" type="button">
           <svg class="icon-close" width="8" height="8">
@@ -517,7 +539,7 @@
           </svg>
         </button>
         <p class="popup-txt">Leave your contacts and we will call you back</p>
-        <form class="popup-form" action="">
+        <form class="popup-form">
           <div class="input-wrapper">
             <label class="popup-label" for="name">Name</label>
             <div class="inner-icon-wrapper">
@@ -528,7 +550,7 @@
                 name="name"
                 required
               />
-              <svg class="icon-popup icon-pers" width="12" height="12">
+              <svg class="icon-popup icon-pers" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
@@ -544,7 +566,7 @@
                 name="phone"
                 required
               />
-              <svg class="icon-popup icon-phone" width="13" height="13">
+              <svg class="icon-popup icon-phone" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
@@ -559,15 +581,15 @@
                 name="email"
                 required
               />
-              <svg class="icon-popup icon-mail" width="15" height="12">
+              <svg class="icon-popup icon-mail" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
           <div class="input-wrapper">
-            <label class="popup-label" for="txt">Comment</label>
+            <label class="popup-label" for="textarea">Comment</label>
             <textarea
-            class="textarea"
+              class="textarea"
               name="textarea"
               placeholder="Text input"
               id="textarea"
@@ -584,7 +606,7 @@
               required
             />
             <div class="custom-checkbox">
-              <svg class="icon-check" width="10" height="8">
+              <svg class="icon-check" width="18" height="24">
                 <use href="./images/icons.svg#icon-check"></use>
               </svg>
             </div>
@@ -597,5 +619,6 @@
         </form>
       </div>
     </div>
+    <script src="./js/main.js"></script>
   </body>
 </html>
