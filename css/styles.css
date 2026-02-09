@@ -559,12 +559,14 @@ body {
 .icon-close {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.popup-close:hover .icon-close,
+.popup-close:focus .icon-close {
+    fill: #ffffff;
+}
 .popup-close:hover,
 .popup-close:focus {
   background-color: #404bbf;
   border: none;
-  fill: #ffffff;
 }
 
 .popup-txt {
@@ -672,6 +674,7 @@ body {
   align-items: center;
   fill: transparent;
   cursor: pointer;
+  margin-right: 8px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
